@@ -1,0 +1,101 @@
+body {
+  background-color: #444;
+}
+
+#cursor-box {
+  width: 100dvw;
+  height: calc(100dvh - 16px);
+  position: relative;
+  background-color: transparent;
+}
+
+.trailDiv {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  border-radius: 4px;
+  transform: rotateZ(45deg);
+  top: 0px;
+  left: 0px;
+  display: none;
+}
+
+#nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 2;
+  padding-inline: 32px;
+}
+
+#nav > h1{
+  font-size: 1.1rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  letter-spacing: 4px;
+  font-weight: 800;
+  text-align: center;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  text-transform: capitalize;
+  text-shadow: 4px 4px 10px black;
+  pointer-events: none;
+}
+
+#nav > a{
+  font-size: 1rem;
+  letter-spacing: 2px;
+  font-weight: 500;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  text-align: center;
+  color: #fff;
+  margin-right: 120px;
+  text-decoration: none;
+  text-shadow: 4px 4px 10px black;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+}
+
+.content > h1 {
+  font-size: 4rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  letter-spacing: 8px;
+  font-weight: 800;
+  text-align: center;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  text-shadow: 4px 4px 10px black;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.content > p {
+  font-size: 1rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  text-align: center;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  pointer-events: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
