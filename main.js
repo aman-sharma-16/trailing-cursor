@@ -48,20 +48,3 @@ cursorBox.addEventListener("mouseleave", () => {
     trail.style.display = "none";
   });
 });
-
-cursorBox.addEventListener("touchstart", () => {
-  trailDiv.forEach((trail) => {
-    trail.style.display = "block";
-  });
-});
-
-cursorBox.addEventListener("touchmove", (e) => {
-  mouse.x = e.clientX;
-  mouse.y = e.clientY;
-});
-
-cursorBox.addEventListener("touchend", () => {
-  trailDiv.forEach((trail) => {
-    trail.style.display = "none";
-  });
-});
